@@ -16,7 +16,10 @@ const Hero = () => {
 						<h2 className={cn("h3", styles.title)}>
 							The new creative economy.
 						</h2>
-						<Link className={cn("button-stroke", styles.button)} to="/search01">
+						<Link
+							className={cn("button-stroke", styles.button)}
+							to="/upload-variants"
+						>
 							Mint your NFT
 						</Link>
 					</div>
