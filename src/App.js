@@ -7,6 +7,7 @@ import UploadDetails from "./screens/UploadDetails";
 import Search01 from "./screens/Search01";
 import PageList from "./screens/PageList";
 import YourCollection from "./components/YourCollection";
+import Payments from "./screens/Payments";
 
 function App() {
 	return (
@@ -56,6 +57,15 @@ function App() {
 					render={(props) => (
 						<Page>
 							<YourCollection {...props} />
+						</Page>
+					)}
+				/>
+				<Route
+					exact
+					path="/payments"
+					render={() => (
+						<Page>
+							<Payments />
 						</Page>
 					)}
 				/>

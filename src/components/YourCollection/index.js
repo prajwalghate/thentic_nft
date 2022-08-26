@@ -68,26 +68,26 @@ const YourCollection = ({ className }) => {
 		};
 		console.log(metadata);
 
-		// await fetch(`https://thentic.tech/api/nfts/transfer`, {
-		// 	method: "POST",
-		// 	headers: {
-		// 		"Content-Type": "application/json",
-		// 	},
-		// 	body: JSON.stringify(metadata),
-		// })
-		// 	.then((response) => response.json())
-		// 	.then((data) => {
-		// 		console.log(data);
-		// 		window.open(data.transaction_url, "_blank");
-		// 	})
-		// 	.catch((error) => {
-		// 		console.log(error);
-		// 	})
-		// 	.finally(() => {
-		// 		console.log("finally");
-		// 	});
+		await fetch(`https://thentic.tech/api/nfts/transfer`, {
+			method: "POST",
+			headers: {
+				"Content-Type": "application/json",
+			},
+			body: JSON.stringify(metadata),
+		})
+			.then((response) => response.json())
+			.then((data) => {
+				console.log(data);
+				window.open(data.transaction_url, "_blank");
+			})
+			.catch((error) => {
+				console.log(error);
+			})
+			.finally(() => {
+				console.log("finally");
+			});
 
-		// setreciever("");
+		setreciever("");
 	};
 
 	return (

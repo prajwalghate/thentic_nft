@@ -14,6 +14,10 @@ const nav = [
 		url: "/yourcollection",
 		title: "Discover",
 	},
+	{
+		url: "/payments",
+		title: "Payments",
+	},
 ];
 
 const Headers = () => {
